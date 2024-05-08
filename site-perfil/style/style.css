@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --colorPrimary: hsl(75, 94%, 57%);
+  --colorWhite: hsl(0, 0%, 100%);
+  --colorGrey: hsl(0, 0%, 20%);
+  --colorDarkGrey: hsl(0, 0%, 12%);
+  --colorOffBlack: hsl(0, 0%, 8%);
+
+  --fontP: 400 14px "Inter", arial, sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--colorOffBlack);
+  padding: 200px 0px;
+  font: var(--fontP);
+}
+#perfil {
+  background-color: var(--colorDarkGrey);
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  min-width: 50px;
+  max-width: 250px;
+}
+#avatar {
+  border-radius: 50%;
+  width: 75px;
+  padding: 10px;
+}
+#nome {
+  color: var(--colorWhite);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#endereco {
+  color: var(--colorPrimary);
+  font-size: 0.8em;
+  padding: 10px;
+  font-weight: bold;
+}
+#trabalho {
+  color: var(--colorWhite);
+  padding: 10px;
+  font-size: 0.7em;
+}
+.links {
+  display: flex;
+  padding: 5px;
+  background-color: var(--colorGrey);
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7.5px;
+  margin: 10px auto;
+  width: 85%;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: var(--colorWhite);
+  transition-duration: 0.25s;
+}
+.links:hover {
+  color: var(--colorOffBlack);
+  background-color: var(--colorPrimary);
+  font-weight: bolder;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 10px;
+  color: var(--colorWhite);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  color: var(--colorPrimary);
+}
+.attribution a:hover {
+  color: var(--colorGrey);
+}
+
+@media (max-height: 800px) {
+  body {
+    padding: 100px 0px;
+  }
+}
+
+@media (max-height: 600px) {
+  body {
+    padding: 50px 0px;
+  }
+}

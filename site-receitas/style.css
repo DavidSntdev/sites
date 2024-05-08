@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --cor01: hsl(14, 45%, 36%);
+  --cor02: hsl(332, 51%, 32%);
+  --cor03: hsl(330, 100%, 98%);
+  --cor04: hsl(30, 54%, 90%);
+  --cor05: hsl(30, 18%, 87%);
+  --cor06: hsl(30, 10%, 34%);
+  --cor07: hsl(24, 5%, 18%);
+
+  --fonteP: 400 1em "Outfit", sans-serif;
+  --fonteH1: 400 2.5em "Young Serif", serif;
+  --fonteH2: 400 1.5em "Young Serif", sans-serif;
+  --fonteH3: 600 1em "Young Serif", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f3e5d8;
+  padding: 100px 0px 0px 0px;
+}
+
+main {
+  background-color: white;
+  padding: 20px 40px;
+  margin: auto;
+  border-radius: 20px;
+  min-width: 340px;
+  max-width: 650px;
+  text-align: justify;
+}
+#img {
+  padding: 30px 0px;
+}
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+article {
+  font: var(--fonteP);
+}
+article p {
+  color: var(--cor06);
+  line-height: 1.5em;
+}
+
+article li {
+  color: var(--cor06);
+  margin-left: 55px;
+  line-height: 2em;
+}
+#preparacao {
+  background-color: var(--cor03);
+  margin: 20px 0px 10px 0px;
+  padding: 10px 0px 20px 0px;
+  border-radius: 10px;
+}
+
+.lista-1 li::marker {
+  color: var(--cor02);
+}
+.lista-2 {
+  margin-left: -30px;
+}
+.lista-2 li,
+.lista-1 li {
+  padding: 0px 0px 0px 10px;
+}
+.lista-2 li::marker {
+  color: var(--cor01);
+}
+
+article h1 {
+  min-width: 370px;
+  max-width: 900px;
+  color: var(--cor07);
+  font: var(--fonteH1);
+  padding: 10px 0px 10px 0px;
+  text-align: left;
+}
+article h2 {
+  font: var(--fonteH2);
+  color: var(--cor01);
+  padding: 15px 0px;
+}
+article h3 {
+  font: var(--fonteH3);
+  color: var(--cor02);
+  padding: 20px 0px 10px 30px;
+}
+
+table {
+  display: inline-block;
+  color: var(--cor06);
+  text-align: left;
+}
+.caixa-table {
+  text-align: left;
+  padding: 10px;
+}
+.caixa-table th,
+.caixa-table td {
+  padding: 15px 8px 10px 25px;
+}
+.caixa-table th {
+  padding: 0px 0px 0px 150px;
+  color: var(--cor01);
+  margin: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  margin: 90px 0px 0px 0px;
+  font: bold 0.7em arial;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 770px) {
+  body {
+    padding: 0px;
+  }
+  main {
+    padding: 7.5px 15px 7.5px 15px;
+  }
+  article h1 {
+    font-size: 2em;
+  }
+  img {
+    border-radius: 0px;
+  }
+  #img {
+    padding: 0px 0px 15px 0px;
+    margin: -7.5px -15px 0px -15px;
+    
+  }
+  .attribution {
+    display: none;
+  }
+}

@@ -1,0 +1,220 @@
+@charset "UTF-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'FontAndroid';
+    src: url('fontes/idroid.otf') format('opentype'); 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #84E1AD;
+    margin: 0px;
+}
+header {
+    background-image: linear-gradient(to top, #1A5C38, #3CD681);
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.658);
+    text-shadow: 1px 1px 1px black;
+}
+nav {
+    margin: 0px;
+    padding: 10px;
+    background-color: #1A5C38;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.37);
+}
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    color: #8DD4AE;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: initial;
+    transition: color 0.25s, background-color 0.75s;
+    border-radius: 5px;
+}
+nav > a:hover {
+    color: #01622B;
+    background-color: #338F63;
+}
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    padding: 15px;
+    color: white;
+    margin: 0px;
+}
+h2 {
+    font-family: 'FontAndroid';
+    padding: 10px 1px 1px 5px;
+    margin: 0px;
+    color: #153F26;
+}
+h3 {
+    color: #004B1B;
+    background-image: linear-gradient(to right,#8BE3B0, white);
+    padding: 5px;
+}
+section {
+    background-color: white;
+    width: 900px;
+    margin: auto;
+    border-radius: 1px 1px 15px 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+}
+article {
+    padding: 15px;
+}
+article > p {
+    text-align: justify;
+    font: bold 0.8em arial, sans-serif;
+    line-height: 2em;
+}
+article > p > a {
+    background-color: #8BE3B0;
+    color: #004B1B;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+article > p > a:hover {
+    text-decoration: underline;
+}
+article > p > strong {
+    color: #004B1B;
+    font-weight: bolder;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+#bugdroid {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#video {
+    background-color: #1A5C38;
+    padding: 15px 30px;
+}
+iframe {
+    margin: 0px;
+}
+#introducaoextra {
+    background-color: #155430;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px 10px 1px 1px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.650);
+}
+#extra {
+    background-color: #8BE3B0;
+    padding: 10px;
+    text-align: justify;
+    color: #035020;
+    border-radius: 1px 1px 10px 10px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.550);
+}
+#extra > p {
+    margin: 5px;
+    font: bold 0.8em arial, sans-serif;
+}
+#extra > p > a {
+    color: #004B1B;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#extra > p > a:hover {
+    text-decoration: underline;
+}
+ul {
+    margin: 0px;
+    width: 150px;
+    display: inline-block;
+    margin-right: 80px;
+    font: bold 0.7em arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1A5C38;
+    margin: 15px 0px 0px 0px;
+}
+footer > p {
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+@media (max-width: 424px) {
+    header > p {
+        font-size: 0.7em;
+    }
+    nav > a {
+        font-size: 0.7em;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    article > p {
+        font-size: 0.7em;
+    }
+    #introducaoextra {
+        font-size: 0.9em;
+    }
+    #extra > p {
+        font-size: 0.6em;
+    }
+    #extra > ul {
+        font-size: 0.6em;
+    }
+    footer > p {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 500px) {
+    footer > p {
+        font-size: 0.8em;
+    }
+    #video {
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+        margin: 0px;
+    }
+    section {
+        border-radius: 0px;
+        width: 100%;
+    }
+    nav {
+        text-align: center;
+    }
+    iframe {
+        width: 100%;
+    }
+}
+
+
