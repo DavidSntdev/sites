@@ -20,7 +20,7 @@
 
 body {
   background-color: var(--colorNight);
-  padding: 300px 0px;
+  padding: 200px 0px;
 }
 
 p {
@@ -85,6 +85,10 @@ main p {
   color: var(--colorNight);
   background-color: var(--colorLightCyan);
   font-weight: bolder;
+}
+
+#aparecer {
+  padding: 10px 0px;
 }
 
 #consideracoes {
