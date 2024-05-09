@@ -88,7 +88,18 @@ main p {
 }
 
 #aparecer {
-  padding: 10px 0px;
+  padding: 10px 15px;
+  display: none;
+}
+
+#voltar {
+  width: 50px;
+  background-color: var(--colorLime);
+  color: var(--colorNight);
+  font-weight: bold;
+}
+#voltar:hover {
+  background-color: var(--colorLightCyan);
 }
 
 #consideracoes {
