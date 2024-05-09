@@ -1,2 +1,14 @@
 @charset "UTF-8";
 
+:root {
+    --colorNight: #111111;
+    --colorEerieBlack: #181818;
+    --colorRisinBlack: #252525;
+    --colorLightCyan: #CBEEF3;
+    --colorLime: #C5F82A;
+}
+
+body {
+    background-color: var(--colorNight);
+}
+
