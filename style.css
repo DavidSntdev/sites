@@ -1,14 +1,103 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 :root {
-    --colorNight: #111111;
-    --colorEerieBlack: #181818;
-    --colorRisinBlack: #252525;
-    --colorLightCyan: #CBEEF3;
-    --colorLime: #C5F82A;
+  --colorNight: #111111;
+  --colorEerieBlack: #181818;
+  --colorRisinBlack: #252525;
+  --colorLime: #c5f82a;
+  --colorLightCyan: #8bdae4;
+  --colorWhite: hsl(0, 0%, 100%);
+
+  --fontP: 400 0.9em "Inter", arial, sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color: var(--colorNight);
+  background-color: var(--colorNight);
+  padding: 300px 0px;
 }
 
+p {
+  color: var(--colorWhite);
+}
+
+main {
+  margin: auto;
+  padding: 20px;
+  background-color: var(--colorEerieBlack);
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  font: var(--fontP);
+}
+
+.header {
+  width: 100px;
+  margin: auto;
+}
+#avatar {
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+}
+
+main h1 {
+  margin: 5px;
+  font-size: 1.5em;
+  color: var(--colorLightCyan);
+}
+
+main h2 {
+  margin: 5px;
+  font-size: 1em;
+  color: var(--colorLime);
+}
+
+main p {
+  margin: 15px 0px 20px 0px;
+  color: var(--colorWhite);
+  font-size: 0.8em;
+}
+
+.links {
+  display: flex;
+  padding: 5px;
+  background-color: var(--colorRisinBlack);
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7.5px;
+  margin: 10px auto;
+  width: 75%;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: var(--colorWhite);
+  transition-duration: 0.25s;
+}
+.links:hover {
+  color: var(--colorNight);
+  background-color: var(--colorLightCyan);
+  font-weight: bolder;
+}
+
+#consideracoes {
+  padding: 5px;
+  font-size: 0.8em;
+  text-align: center;
+  color: var(--colorWhite);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#consideracoes a {
+  text-decoration: none;
+  color: var(--colorLime);
+}
+#consideracoes a:hover {
+  color: var(--colorLightCyan);
+}
