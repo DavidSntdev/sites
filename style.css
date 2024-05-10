@@ -27,7 +27,16 @@ p {
   color: var(--colorWhite);
 }
 
-main {
+header {
+  width: 100px;
+  margin: auto;
+}
+#avatar {
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+}
+article {
   margin: auto;
   padding: 20px;
   background-color: var(--colorEerieBlack);
@@ -37,29 +46,18 @@ main {
   font: var(--fontP);
 }
 
-.header {
-  width: 100px;
-  margin: auto;
-}
-#avatar {
-  width: 100%;
-  border-radius: 50%;
-  margin: auto;
-}
-
-main h1 {
+article h1 {
   margin: 5px;
   font-size: 1.5em;
   color: var(--colorLightCyan);
 }
-
-main h2 {
+article h2 {
   margin: 5px;
   font-size: 1em;
   color: var(--colorLime);
 }
 
-main p {
+article p {
   margin: 15px 0px 20px 0px;
   color: var(--colorWhite);
   font-size: 0.8em;
