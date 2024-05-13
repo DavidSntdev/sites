@@ -93,15 +93,18 @@ footer {
   text-align: center;
   padding: center;
   padding: 5px;
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 @media (max-width: 750px) {
   header h1 {
     font-size: 3em;
   }
-  
   section {
     font-size: 1.5em;
+    font-size: 1.5em;
+  }
+  footer {
+    font-size: 0.7em;
   }
 }
