@@ -85,6 +85,18 @@ article p {
   font-weight: bolder;
 }
 
+#portifolio {
+  width: 100px;
+  background-color: var(--colorLime);
+  color: var(--colorNight);
+  font-weight: bolder;
+  margin-top: 15px;
+}
+
+#portifolio:hover {
+  background-color: var(--colorLightCyan);
+}
+
 #aparecer {
   padding: 10px 15px;
   display: none;
