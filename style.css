@@ -125,6 +125,7 @@ article p {
   color: var(--colorLime);
 }
 #consideracoes a:hover {
+  text-decoration: underline;
   color: var(--colorLightCyan);
 }
 
