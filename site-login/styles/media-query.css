@@ -11,6 +11,7 @@
   }
   #login {
     width: 80vw;
+    height: 350px;
   }
   #imagem {
     float: left;
@@ -36,6 +37,7 @@
   }
   #login {
     width: 990px;
+    height: 400px;
   }
 
   #imagem {
