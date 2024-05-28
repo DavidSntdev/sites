@@ -68,7 +68,7 @@ main {
 
 .campo {
   background-color: var(--cor02);
-  border: 1px solid var(--cor02);
+  border: 2px solid var(--cor02);
   width: 100%;
   display: block;
   height: 40px;
@@ -94,7 +94,7 @@ form label {
   border: 0px;
   border-radius: 8px;
   padding: 4px;
-  transform: translateY(-12px);
+  transform: translateY(-14px);
 }
 
 .campo input:focus-within {
