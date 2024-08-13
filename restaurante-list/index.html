@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <div id="compra">
+      <div id="pedido">
+        <img src="assets/images/icon-order-confirmed.svg" alt="" />
+        <h1>Order Confirmed</h1>
+        <p>We hope you enjoy your food!</p>
+        <div id="foods">
+          <div id="content">
+            <!-- conteudo no js -->
+          </div>
+          <p id="order">Order Total</p>
+          <p id="totalPriceContent">$00.00</p>
+        </div>
+        <button id="btnNewOrder">Start New Order</button>
+      </div>
+    </div>
+    <main>
+      <div id="restaurante">
+        <h1>Dessert</h1>
+        <!-- restaurante no js -->
+      </div>
+      <div id="carrinho">
+        <h3>Your Cart (0)</h3>
+        <div id="itens-carrinho">
+          <div id="empty">
+            <img
+              src="assets/images/illustration-empty-cart.svg"
+              alt="empty-cart"
+              id="imgCart"
+            />
+            <p>Your added items will appear here</p>
+          </div>
+          <div id="listaCarrinho">
+            <div id="pedidos">
+              <!-- pedidos no js -->
+            </div>
+            <div id="orderCart">
+              <div id="total">Order Total</div>
+              <div id="preco">preco total</div>
+            </div>
+          </div>
+          <button id="btnConfirmOrder" style="display: none">
+            Confirm Order
+          </button>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/dvd1337">David Santos</a>.
+    </div>
+    <script src="restaurante.js"></script>
+  </body>
+</html>
