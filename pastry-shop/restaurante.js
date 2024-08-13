@@ -267,8 +267,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function displayCartItemsInBuy() {
     buyContent.innerHTML = "";
+    let totalBuy = 0;
+
     cartItems.forEach((item) => {
-      priceContent.innerText = `$${(item.price * item.quantity).toFixed(2)}`;
+      const itemTotal = item.price * item.quantity;
+      totalBuy += itemTotal;
+
       const itemDiv = document.createElement("div");
       itemDiv.classList.add("item");
 
@@ -281,10 +285,12 @@ document.addEventListener("DOMContentLoaded", () => {
             <div id="priceBuy">@ $${item.price.toFixed(2)}</div>
           </div>
         </div>
-        <div id="totalBuy">$${(item.price * item.quantity).toFixed(2)}</div>
+        <div id="totalBuy">$${itemTotal.toFixed(2)}</div>
       `;
 
       buyContent.appendChild(itemDiv);
     });
+
+    priceContent.innerText = `$${totalBuy.toFixed(2)}`;
   }
 });
